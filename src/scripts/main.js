@@ -16,7 +16,7 @@ addRow.addEventListener('click', () => {
   if (allRows.length < maxCount) {
     const cloneRow = row.cloneNode(true);
 
-    table.append(cloneRow);
+    row.parentNode.append(cloneRow);
   }
 
   const updatedRows = table.querySelectorAll('tr');
